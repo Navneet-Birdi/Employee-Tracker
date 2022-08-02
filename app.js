@@ -30,16 +30,19 @@ function main(){
 //retrieve choices
 switch(ans.operation){
     case "view all departments":
-    const department =  await getDepartment();
-    console.table(department);
+    //const department =  await getDepartment();
+    //console.table(department);
+    getDepartment();
     break;
 
 case "view all roles":
     break;
 
 case "exit":
-    process.exit(0);
-
+    process.exit();
+break;
+default:
+    process.exit();
 }
 //if the user not select the exit
 //now calling function outside switch statement
