@@ -35,4 +35,7 @@ THEN I am prompted to enter the employee’s first name, last name, role, and ma
 WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
 ```
+# Employee Tracker
+This application is made to track employees data, it is command line application which accepts user input where user will be prompt with various options like- view all departments, view all roles, view view all employees, add department, add role and so on.
 
+So user can select any of these options to add data, to select data, to update like that.This application is build with Nodejs, Inquirer, MySQL.
