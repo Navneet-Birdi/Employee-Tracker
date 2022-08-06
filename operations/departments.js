@@ -5,7 +5,7 @@ async function addDepartment(name){
 
   const db = await connect();
 
-  await db.query('INSERT INTO `employee_cms_demo`.`department` (`name`) VALUES (?)', name);
+  await db.query('INSERT INTO `employee_demo`.`department` (`name`) VALUES (?)', name);
 }
 
 

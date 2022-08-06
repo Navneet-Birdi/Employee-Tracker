@@ -1,8 +1,8 @@
 const {faker} = require('@faker-js/faker');
-const { addDepartment } = require('../../operations/department');
+const { addDepartment } = require('../../operations/departments');
 
 
-async function seedDepartments(num = 10){
+async function seedDepartment(num = 10){
 
   
   for (let index = 0; index < num; index++) {
@@ -16,5 +16,5 @@ async function seedDepartments(num = 10){
 
 
 module.exports = {
-  seedDepartments,
+  seedDepartment,
 }

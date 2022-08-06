@@ -5,22 +5,23 @@ try{
   }
   
   
-  
+  //importing mysql2
   const mysql = require('mysql2/promise');
   
   
-  
-  function connect(){
-  
-  
-    return mysql.createConnection({
+  //connection to database
+//  
+//     return mysql.createConnection({
+//         host: "localhost",
+//         password: "root",
+//         user: "root",
+//         database: "employee_demo",
+//       });
+   function connect(){
+     return mysql.createConnection({
       host: process.env.DB_HOST,
       password: process.env.DB_PASSWORD,
       user: process.env.DB_USER,
-      database: 'employee_cms_demo',
-    })
-  
-  
+      database: 'employee_demo',
+     })
   }
-  
-  module.exports = {connect};
